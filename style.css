@@ -32,6 +32,11 @@ body {
   background: var(--bg-main);
   color: var(--text-primary);
 }
+.global-container {
+  margin-top: 20px;
+  border-top: 3px solid gray;
+  padding: 20px;
+}
 .subTitle {
   font-size: large;
   color: var(--primary-color);
@@ -158,7 +163,6 @@ nav .nav-icons {
 }
 .posts .left {
   grid-column: span 3;
-
   padding: 20px;
   border: 1px solid #ccc;
   display: flex;
@@ -167,7 +171,6 @@ nav .nav-icons {
 }
 .posts .center {
   grid-column: span 6;
-
   padding: 20px;
   border: 1px solid #ccc;
 }
@@ -250,14 +253,14 @@ nav .nav-icons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .featurd3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 15px;
+  padding: 15px 0;
 }
 .center3col h1 {
   font-size: small;
@@ -273,16 +276,109 @@ nav .nav-icons {
    lifestyle
 ========================= */
 /* section jibonjapon */
-.jibonjapon {
-  margin-top: 20px;
-  border-top: 3px solid gray;
-  padding: 20px;
-}
+
 .jbn-news {
   margin-top: 10px;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
+}
+/* =========================
+   opinions-news
+========================= */
+.opinions-news {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
+}
+.opinions-news .opinionLeft {
+  grid-column: span 4;
+  height: 100%;
+  /* background: #764a4a; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.opinionsLeftBox {
+  position: relative;
+  width: 70%;
+  border: 1px solid var(--text-secondary);
+  height: 100%;
+}
+.opinion-titles {
+  position: absolute;
+  top: 20px;
+  left: -50px;
+}
+.opinion-titles div {
+  margin-bottom: 7px;
+}
+
+.opinion-titles span {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 3px;
+  background: #131c56;
+  margin-bottom: 7px;
+}
+
+.opinion-titles .oplabel {
+  color: var(--primary-color);
+}
+
+.opinionsLeftBox .left-des {
+  width: 90%;
+  font-size: large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.opinionsLeftBox .opwriter {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+/* right  */
+.opinions-news .opinionRight {
+  grid-column: span 6;
+}
+.opinion-card {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.opinion-card img {
+  width: 100px;
+  border-radius: 100%;
+}
+.opinion-card .opinion-title {
+  font-size: 22px;
+  color: var(--text-secondary);
+  font-weight: normal;
+}
+.opinion-card .opinion-title span {
+  font-size: 22px;
+}
+.opinion-card .line {
+  width: 30px;
+  height: 5px;
+  background: gray;
+  margin-top: 5px;
+}
+.opinion-card .openionInfo {
+  margin-top: 20px;
+}
+.opinion-card p {
+  font-size: small;
+  color: var(--text-secondary);
+}
+.opinion-card p span {
+  font-weight: 400;
+  font-size: 18px;
 }
 /* =========================
    RESPONSIVE BREAKPOINTS
@@ -360,5 +456,23 @@ nav .nav-icons {
   /* section 2 jibon japon  */
   .jbn-news {
     grid-template-columns: repeat(1, 1fr);
+  }
+  /* opinions-news  */
+  .opinions-news {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .opinions-news .opinionRight,
+  .opinions-news .opinionLeft {
+    grid-column: span 1;
+  }
+
+  .opinions-news .opinionLeft {
+    min-height: 500px;
+  }
+  .opinionsLeftBox {
+    width: 80%;
+  }
+  .opinionsLeftBox .opinion-titles {
+    left: -30px;
   }
 }

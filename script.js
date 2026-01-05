@@ -30,11 +30,6 @@ function navberContol() {
 
 navberContol();
 
-//nationa
-function nationalNews(data) {}
-nationalNews(newsData);
-//new
-
 function renderNewsByCategory(
   data,
   categoryName,
@@ -67,6 +62,50 @@ function renderNewsByCategory(
     container.appendChild(card);
   });
 }
+function renderOpinionNews(
+  data,
+  categoryName,
+  containerSelector,
+  cardClassName,
+  sliceNumber
+) {
+  const container = document.querySelector(containerSelector);
+
+  if (!container) return;
+
+  const filteredNews = data
+    .filter((news) => news.category === categoryName)
+    .slice(0, sliceNumber);
+
+  filteredNews.forEach((news) => {
+    const card = document.createElement("article");
+    card.className = cardClassName;
+
+    card.innerHTML = `
+      <div class="opinion-card">
+       <div>
+         <img src="${news.authorImage}" alt="Thumbnail">
+       </div>
+       <div>
+        <h1 class="opinion-title"><span class="subTitle">মতামত <i class="fas fa-circle" style="font-size: 5px;"></i></span> ${news.title}</h1>
+        <div class="line"></div>
+        <div class="openionInfo">
+
+         <p><span>লেখা:</span> ${news.author}</p>
+         <p class="pDate">${news.publishDate}</p>
+        </div>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+renderNewsByCategory(newsData, "আন্তর্জাতিক", ".leftNews", "intNewsCard", 5);
+renderNewsByCategory(newsData, "প্রযুক্তি", ".right1", "intNewsCard", 5);
+renderNewsByCategory(newsData, "প্রযুক্তি", ".featurd2", "intNewsCard", 4);
+
+renderOpinionNews(opinionNews, "মতামত", ".ourOpinion", "opinionCard", 5);
 
 // full contoled function
 const newsfinding = (data, options, templateCallback) => {
@@ -83,11 +122,6 @@ const newsfinding = (data, options, templateCallback) => {
 
   container.innerHTML = html;
 };
-
-renderNewsByCategory(newsData, "আন্তর্জাতিক", ".leftNews", "intNewsCard", 5);
-renderNewsByCategory(newsData, "প্রযুক্তি", ".right1", "intNewsCard", 5);
-renderNewsByCategory(newsData, "প্রযুক্তি", ".featurd2", "intNewsCard", 4);
-
 newsfinding(
   newsData,
   { category: "বাংলাদেশ", selector: ".featurd", limit: 1 },
