@@ -32,6 +32,27 @@ body {
   background: var(--bg-main);
   color: var(--text-primary);
 }
+.subTitle {
+  font-size: large;
+  color: var(--primary-color);
+}
+.global-title {
+  font-size: 15px;
+  color: var(--text-primary);
+  padding: 10px 0;
+}
+.global-title:hover {
+  color: rgb(76, 76, 227);
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+.global-content {
+  font-size: small;
+  color: var(--text-secondary);
+}
+.global-card a {
+  text-decoration: none;
+}
 .top-bar {
   display: flex;
   align-items: center;
@@ -160,17 +181,18 @@ nav .nav-icons {
 .intNewsCard {
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .intNewsCard div div h1 {
   font-size: 15px;
   color: var(--text-primary);
 }
-.intNewsCard div div h1:hover {
+/* .intNewsCard div div h1:hover {
   color: rgb(76, 76, 227);
   transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   cursor: pointer;
-}
+} */
 
 .intNewsCard div div {
   display: flex;
@@ -185,12 +207,30 @@ nav .nav-icons {
   font-size: small;
   color: var(--text-secondary);
 }
-.intNewsCard div .pDate {
+.global-card .pDate {
   margin-top: 10px;
+  font-size: small;
+  color: var(--text-secondary);
 }
 
 /* =========================
-   featured-news
+   leftnoimagenews
+========================= */
+.leftnoimagenews {
+  padding: 10px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.leftnoimagenews h1 {
+  font-size: large;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+.leftnoimagenews a {
+  text-decoration: none;
+}
+/* =========================
+   featured-news center
 ========================= */
 .featured-news h1 {
   font-size: x-large;
@@ -213,6 +253,37 @@ nav .nav-icons {
   padding: 15px;
 }
 
+.featurd3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 15px;
+}
+.center3col h1 {
+  font-size: small;
+  font-size: 15px;
+}
+.center3col p {
+  color: var(--text-secondary);
+}
+.center3col img {
+  width: 100%;
+}
+/* =========================
+   lifestyle
+========================= */
+/* section jibonjapon */
+.jibonjapon {
+  margin-top: 20px;
+  border-top: 3px solid gray;
+  padding: 20px;
+}
+.jbn-news {
+  margin-top: 10px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
 /* =========================
    RESPONSIVE BREAKPOINTS
 ========================= */
@@ -276,5 +347,18 @@ nav .nav-icons {
   }
   .intNewsCard div div img {
     width: 100%;
+  }
+
+  /* section1 secter 3 col  projukti */
+  .featurd3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .center3col #centercol3p {
+    display: none !important;
+  }
+
+  /* section 2 jibon japon  */
+  .jbn-news {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

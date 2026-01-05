@@ -55,9 +55,9 @@ function renderNewsByCategory(
     card.className = cardClassName;
 
     card.innerHTML = `
-      <div>
+      <div class="global-card">
        <div>
-         <h1>${news.title}</h1>
+         <h1 class="global-title">${news.title}</h1>
          <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
        </div>
        <p>${news.excerpt}</p>
@@ -84,8 +84,8 @@ const newsfinding = (data, options, templateCallback) => {
   container.innerHTML = html;
 };
 
-renderNewsByCategory(newsData, "আন্তর্জাতিক", ".left", "intNewsCard", 5);
-renderNewsByCategory(newsData, "প্রযুক্তি", ".right", "intNewsCard", 5);
+renderNewsByCategory(newsData, "আন্তর্জাতিক", ".leftNews", "intNewsCard", 5);
+renderNewsByCategory(newsData, "প্রযুক্তি", ".right1", "intNewsCard", 5);
 renderNewsByCategory(newsData, "প্রযুক্তি", ".featurd2", "intNewsCard", 4);
 
 newsfinding(
@@ -93,11 +93,11 @@ newsfinding(
   { category: "বাংলাদেশ", selector: ".featurd", limit: 1 },
   (news) => {
     return `
-    <article class="featured-news">
+    <article class="featured-news global-card">
       <a href="">
        <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
       </a>
-       <h1>${news.title}</h1>
+       <h1 class="global-title">${news.title}</h1>
        <p>${news.excerpt}</p>
        <button>বিস্তারিত পড়ুন</button>
     </article>
@@ -108,16 +108,73 @@ newsfinding(
 // left conteainer new without image
 newsfinding(
   newsData,
-  { category: "বাংলাদেশ", selector: ".featurd", limit: 1 },
+  { category: "বিনোদন", selector: ".leftSiteNoImage", limit: 5 },
   (news) => {
     return `
-    <article class="featured-news">
+    <article class="leftnoimagenews global-card">
       <a href="">
+       <h1 class="global-title">${news.title}</h1>
+      </a>
+
+       <p class="pDate">${news.publishDate}</p>
+     
+    </article>
+  `;
+  }
+);
+
+// center div 3 col news
+newsfinding(
+  newsData,
+  { category: "প্রযুক্তি", selector: ".featurd3", limit: 6 },
+  (news) => {
+    return `
+    <article class="center3col global-card">
+        <a href="">
        <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
       </a>
-       <h1>${news.title}</h1>
-       <p>${news.excerpt}</p>
-       <button>বিস্তারিত পড়ুন</button>
+      <a href="">
+       <h1 class="global-title">${news.title}</h1>
+      </a>
+     <p class="global-content">${news.excerpt}</p>
+      <p class="pDate">${news.publishDate}</p>
+    </article>
+  `;
+  }
+);
+
+//right dev title and content
+newsfinding(
+  newsData,
+  { category: "খেলা", selector: ".right2", limit: 5 },
+  (news) => {
+    return `
+    <article class="center3col global-card">
+      <a href="">
+       <h1 class="global-title">${news.title}</h1>
+      </a>
+     <p class="global-content">${news.excerpt}</p>
+      <p class="pDate">${news.publishDate}</p>
+    </article>
+  `;
+  }
+);
+
+//jibonjapon section
+newsfinding(
+  newsData,
+  { category: "lifestyle", selector: ".jbn-news", limit: 4 },
+  (news) => {
+    return `
+    <article class="center3col global-card">
+     <a href="">
+       <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
+      </a>
+      <a href="">
+       <h1 class="global-title">${news.title}</h1>
+      </a>
+     <p id="centercol3p" class="global-content ">${news.excerpt}</p>
+      <p class="pDate">${news.publishDate}</p>
     </article>
   `;
   }
