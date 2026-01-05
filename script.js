@@ -55,7 +55,7 @@ function renderNewsByCategory(
          <h1 class="global-title">${news.title}</h1>
          <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
        </div>
-       <p>${news.excerpt}</p>
+       <p class="global-content">${news.excerpt}</p>
        <p class="pDate">${news.publishDate}</p>
       </div>
     `;
@@ -208,6 +208,45 @@ newsfinding(
        <h1 class="global-title">${news.title}</h1>
       </a>
      <p id="centercol3p" class="global-content ">${news.excerpt}</p>
+      <p class="pDate">${news.publishDate}</p>
+    </article>
+  `;
+  }
+);
+
+// world lerft 1 post
+newsfinding(
+  newsData,
+  { category: "বাণিজ্য", selector: ".worldLeft", limit: 1 },
+  (news) => {
+    return `
+    <article class=" worldCard global-card">
+        <a href="">
+       <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
+      </a>
+      <a href="">
+       <h1 class="global-title">${news.title}</h1>
+      </a>
+         <p class="global-content">${news.content}</p>
+      <p class="pDate">${news.publishDate}</p>
+    </article>
+  `;
+  }
+);
+// world
+newsfinding(
+  newsData,
+  { category: "বাণিজ্য", selector: ".worldRight", limit: 4 },
+  (news) => {
+    return `
+    <article class=" worldCard global-card">
+        <a href="">
+       <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
+      </a>
+      <a href="">
+       <h1 class="global-title">${news.title}</h1>
+      </a>
+    
       <p class="pDate">${news.publishDate}</p>
     </article>
   `;
