@@ -46,7 +46,7 @@ body {
   display: none;
 }
 .site-logo {
-  height: 80px;
+  height: 110px;
 }
 
 /* Hide state */
@@ -129,7 +129,71 @@ nav .nav-icons {
    post sections 
 ========================= */
 .posts {
-  height: 1000px;
+  /* height: 800px; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.posts .left {
+  grid-column: span 3;
+
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.posts .center {
+  grid-column: span 6;
+  background: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.posts .right {
+  grid-column: span 3;
+
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.intNewsCard {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.intNewsCard div h1 {
+  font-size: 15px;
+  color: var(--text-primary);
+}
+.intNewsCard div h1:hover {
+  color: rgb(76, 76, 227);
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+
+.intNewsCard div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  gap: 5px;
+}
+.intNewsCard div img {
+  width: 100px;
+}
+.intNewsCard p {
+  font-size: small;
+  color: var(--text-secondary);
+}
+.intNewsCard .pDate {
+  margin-top: 10px;
+}
+
+/* =========================
+   national
+========================= */
+.national {
+  height: 800px;
 }
 /* =========================
    RESPONSIVE BREAKPOINTS
@@ -170,5 +234,20 @@ nav .nav-icons {
   }
   .nav-icons .test {
     display: none;
+  }
+
+  /* post section one  */
+  .posts {
+    display: grid;
+    gap: 20px;
+    padding: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .posts .left,
+  .posts .center,
+  .posts .right {
+    grid-column: span 1;
+    padding: 20px;
+    border: 1px solid #ccc;
   }
 }
