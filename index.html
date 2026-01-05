@@ -18,10 +18,19 @@
     <!-- header section  -->
     <header>
       <div>
-        <div class="logo-container">
+        <div id="topBar" class="top-bar logo-container">
           <img class="site-logo" src="./assets/siteLogo/logo1.png" alt="logo" />
+
+          <div class="topbar-icons">
+            <p class="test">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </p>
+            <p class="test">
+              <i class="fa-solid fa-user"></i> <span>Login</span>
+            </p>
+          </div>
         </div>
-        <nav>
+        <nav class="navbar" id="navbar">
           <ul>
             <li><a href=""> সর্বশেষ </a></li>
             <li><a href="">বাংলাদেশ </a></li>
@@ -36,20 +45,27 @@
             <li><a href="">ভিডিও </a></li>
           </ul>
           <div class="nav-icons">
-            <p>
+            <p class="test">
               <i class="fa-solid fa-magnifying-glass"></i> <span>খুঁজুন</span>
             </p>
-            <p><i class="fa-solid fa-earth-africa"></i> <span>Eng</span></p>
+            <p class="">
+              <i class="fa-solid fa-earth-africa"></i> <span>Eng</span>
+            </p>
 
-            <p id="epear">
+            <p class="test" id="epear">
               <i class="fa-regular fa-calendar"></i> <span>ই-পেপার</span>
             </p>
-            <p><i class="fa-solid fa-user"></i> <span>Login</span></p>
+            <p class="test">
+              <i class="fa-solid fa-user"></i> <span>Login</span>
+            </p>
             <p id="bar"><i class="fa-solid fa-bars"></i></p>
           </div>
         </nav>
       </div>
     </header>
+
+    <!-- post sections  -->
+    <section class="posts"></section>
 
     <script src="data/data.js"></script>
     <script src="/script.js"></script>

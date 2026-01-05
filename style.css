@@ -32,20 +32,48 @@ body {
   background: var(--bg-main);
   color: var(--text-primary);
 }
-.logo-container {
-  text-align: center;
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topbar-icons {
+  color: var(--text-secondary);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  display: none;
 }
 .site-logo {
   height: 80px;
+}
+
+/* Hide state */
+.top-bar.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   height: 70px;
   border-bottom: 2px solid gray;
   border-top: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* উপরে রাখার জন্য */
+  background: #fff;
 }
 
 nav ul {
@@ -98,6 +126,12 @@ nav .nav-icons {
 }
 
 /* =========================
+   post sections 
+========================= */
+.posts {
+  height: 1000px;
+}
+/* =========================
    RESPONSIVE BREAKPOINTS
 ========================= */
 
@@ -112,5 +146,29 @@ nav .nav-icons {
 @media (max-width: 480px) {
   body {
     font-size: 14px;
+  }
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .topbar-icons {
+    display: block;
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .navbar ul {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .navbar ul::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-icons .test {
+    display: none;
   }
 }
