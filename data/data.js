@@ -236,6 +236,7 @@ const newsData = [
     slug: "bangladesh-ai-investment",
     categoryId: 4,
     category: "প্রযুক্তি",
+    publishDate: "7 জানুয়ারি ২০২৬",
     publishDateTime: "2026-01-04T18:25",
     author: "প্রযুক্তি ডেস্ক",
     thumbnail: "images/tech-2.jpg",
