@@ -52,8 +52,14 @@ function renderNewsByCategory(
     card.innerHTML = `
       <div class="global-card">
        <div>
-         <h1 class="global-title">${news.title}</h1>
-         <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
+         
+          <a href="details.html?id=${news.id}">
+          <h1 class="global-title">${news.title}</h1>
+          </a>
+        
+          <a href="details.html?id=${news.id}">
+           <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
+          </a>
        </div>
        <p class="global-content">${news.excerpt}</p>
        <p class="pDate">${news.publishDate}</p>
@@ -128,10 +134,13 @@ newsfinding(
   (news) => {
     return `
     <article class="featured-news global-card">
-      <a href="">
+      <a href="details.html?id=${news.id}">
        <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
       </a>
-       <h1 class="global-title">${news.title}</h1>
+      
+        <a href="details.html?id=${news.id}">
+         <h1 class="global-title">${news.title}</h1>
+        </a>
        <p>${news.excerpt}</p>
        <button>বিস্তারিত পড়ুন</button>
     </article>
@@ -146,7 +155,7 @@ newsfinding(
   (news) => {
     return `
     <article class="leftnoimagenews global-card">
-      <a href="">
+      <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>
       </a>
 
@@ -164,10 +173,10 @@ newsfinding(
   (news) => {
     return `
     <article class="center3col global-card">
-        <a href="">
+        <a href="details.html?id=${news.id}">
        <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
       </a>
-      <a href="">
+      <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>
       </a>
      <p class="global-content">${news.excerpt}</p>
@@ -184,7 +193,7 @@ newsfinding(
   (news) => {
     return `
     <article class="center3col global-card">
-      <a href="">
+      <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>
       </a>
      <p class="global-content">${news.excerpt}</p>
@@ -201,10 +210,10 @@ newsfinding(
   (news) => {
     return `
     <article class="center3col global-card">
-     <a href="">
+    <a href="details.html?id=${news.id}">
        <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
       </a>
-      <a href="">
+      <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>
       </a>
      <p id="centercol3p" class="global-content ">${news.excerpt}</p>
