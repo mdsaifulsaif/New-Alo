@@ -36,6 +36,14 @@ body {
   margin-top: 20px;
   border-top: 3px solid gray;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.detail-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 900px;
 }
 .subTitle {
   font-size: large;
@@ -85,15 +93,19 @@ body {
 .navbar.sticky {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
   z-index: 1000;
 }
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* margin-top: 20px; */
+  max-width: 1200px;
+  margin: 0 auto;
   height: 70px;
   border-bottom: 2px solid gray;
   border-top: 1px solid var(--border-color);
@@ -156,7 +168,8 @@ nav .nav-icons {
    post sections 
 ========================= */
 .posts {
-  /* height: 800px; */
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;

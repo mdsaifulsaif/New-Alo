@@ -221,10 +221,10 @@ newsfinding(
   (news) => {
     return `
     <article class=" worldCard global-card">
-        <a href="">
+         <a href="details.html?id=${news.id}">
        <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
       </a>
-      <a href="">
+      <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>
       </a>
          <p class="global-content">${news.content}</p>
@@ -240,10 +240,10 @@ newsfinding(
   (news) => {
     return `
     <article class=" worldCard global-card">
-        <a href="">
-       <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
+        <a href="details.html?id=${news.id}">
+       <img src="https://i.ibb.co/d30C0jr/img.jpg" alt="news">
       </a>
-      <a href="">
+      <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>
       </a>
     
@@ -252,3 +252,5 @@ newsfinding(
   `;
   }
 );
+
+// =====================singlepage ==============================
