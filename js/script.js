@@ -288,8 +288,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  console.log(closeBar);
-
   closeBar.addEventListener("click", () => {
     catchSidebar.classList.remove("active");
     document.body.style.overflow = "auto";

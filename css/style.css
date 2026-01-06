@@ -31,7 +31,7 @@ body {
   font-family: var(--font-main);
   background: var(--bg-main);
   color: var(--text-primary);
-  position: relative;
+  /* position: relative; */
 }
 
 .global-container {
@@ -541,20 +541,23 @@ nav .nav-icons {
 }
 
 /* sidebar style  */
-
 .sidebar {
   width: 100%;
   height: 100vh;
   background: var(--bg-main);
-  position: absolute;
+
+  position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+
   display: none;
-}
-.sidebar.active {
-  display: block;
   z-index: 600;
 }
+
+.sidebar.active {
+  display: block;
+}
+
 .sidebar-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -769,6 +772,9 @@ nav .nav-icons {
 @media (max-width: 480px) {
   body {
     font-size: 14px;
+  }
+  .sidebar {
+    z-index: 9999;
   }
   .site-logo {
     height: 90px;
