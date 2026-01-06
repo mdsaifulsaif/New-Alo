@@ -31,7 +31,11 @@
   font-size: xx-large;
   color: var(--primary-color);
 }
-
+.category-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 .c1strow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -40,7 +44,7 @@
 }
 .c1strow .c1strow-left {
   grid-column: span 2;
-  background: rebeccapurple;
+  background: var(--primary-color);
 }
 
 .c1strow .c1strow-left {

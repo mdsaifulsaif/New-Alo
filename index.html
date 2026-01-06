@@ -12,129 +12,267 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- header section  -->
-    <header>
-      <div class="">
-        <div id="topBar" class="top-bar logo-container">
-          <img class="site-logo" src="./assets/siteLogo/logo1.png" alt="logo" />
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar-header">
+          <img
+            src="./assets/siteLogo/logo1.png"
+            alt="নতুন আলো"
+            class="sidebar-logo"
+          />
+          <span class="close-btn">&times;</span>
+        </div>
 
-          <div class="topbar-icons">
-            <p class="test">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </p>
-            <p class="test">
-              <i class="fa-solid fa-user"></i> <span>Login</span>
-            </p>
+        <div class="siber-row">
+          <!-- left site -->
+          <div class="sider-left">
+            <a href="category.html?cat=বাংলাদেশ" class="menu-block">
+              <h4>বাংলাদেশ <i class="fa-solid fa-angle-right"></i></h4>
+              <p>রাজনীতি · জেলা · অপরাধ · পরিবেশ</p>
+            </a>
+
+            <a href="category.html?cat=বিশ্ব" class="menu-block">
+              <h4>বিশ্ব <i class="fa-solid fa-angle-right"></i></h4>
+              <p>ভারত · পাকিস্তান · যুক্তরাষ্ট্র · ইউরোপ</p>
+            </a>
+
+            <a href="category.html?cat=বাণিজ্য" class="menu-block">
+              <h4>বাণিজ্য <i class="fa-solid fa-angle-right"></i></h4>
+              <p>শেয়ারবাজার · ব্যাংক · অর্থনীতি</p>
+            </a>
+
+            <a href="category.html?cat=বিনোদন" class="menu-block">
+              <h4>বিনোদন <i class="fa-solid fa-angle-right"></i></h4>
+              <p>টিভি · নাটক · গান · সিনেমা</p>
+            </a>
+
+            <a href="category.html?cat=খেলা" class="menu-block">
+              <h4>খেলা <i class="fa-solid fa-angle-right"></i></h4>
+              <p>ক্রিকেট · ফুটবল · টেনিস</p>
+            </a>
+          </div>
+
+          <!-- right site -->
+          <div class="sider-right">
+            <div class="right-box">
+              <button class="login-btn">
+                <i class="fa-regular fa-user"></i> Login
+              </button>
+              <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i> খুঁজুন
+              </button>
+            </div>
+
+            <div class="right-box">
+              <h5>অনুসরণ করুন</h5>
+              <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+
+            <div class="right-box">
+              <h5>মোবাইল অ্যাপ</h5>
+              <button class="store-btn">Google Play</button>
+              <button class="store-btn">App Store</button>
+            </div>
           </div>
         </div>
 
-        <nav class="navbar" id="navbar">
-          <div class="navbox">
-            <ul class="nav">
-              <li><a href="category.html?cat=সর্বশেষ">সর্বশেষ</a></li>
-              <li><a href="category.html?cat=বাংলাদেশ">বাংলাদেশ</a></li>
-              <li><a href="category.html?cat=রাজনীতি">রাজনীতি</a></li>
-              <li><a href="category.html?cat=বিশ্ব">বিশ্ব</a></li>
-              <li><a href="category.html?cat=বাণিজ্য">বাণিজ্য</a></li>
-              <li><a href="category.html?cat=মতামত">মতামত</a></li>
-              <li><a href="category.html?cat=খেলা">খেলা</a></li>
-              <li><a href="category.html?cat=বিনোদন">বিনোদন</a></li>
-              <li><a href="category.html?cat=চাকরি">চাকরি</a></li>
-              <li><a href="category.html?cat=জীবনযাপন">জীবনযাপন</a></li>
-              <li><a href="category.html?cat=ভিডিও">ভিডিও</a></li>
+        <!-- <div class="siber-row">
+          <div class="sider-left">
+            <ul class="sidebar-menu">
+              <li><a href="#">হোম</a></li>
+              <li><a href="#">সর্বশেষ খবর</a></li>
+              <li><a href="#">রাজনীতি</a></li>
+              <li><a href="#">অর্থনীতি</a></li>
+              <li><a href="#">প্রযুক্তি</a></li>
+              <li><a href="#">যোগাযোগ</a></li>
             </ul>
+          </div>
+          <div class="sider-right">sdf</div>
+        </div> -->
+      </div>
+    </div>
+    <div id="wrapper" class="wrapper">
+      <!-- header section  -->
+      <header>
+        <div class="">
+          <div id="topBar" class="top-bar logo-container">
+            <a href="/">
+              <img
+                class="site-logo"
+                src="./assets/siteLogo/logo1.png"
+                alt="logo"
+              />
+            </a>
 
-            <div class="nav-icons">
+            <div class="topbar-icons">
               <p class="test">
-                <i class="fa-solid fa-magnifying-glass"></i> <span>খুঁজুন</span>
-              </p>
-              <p class="">
-                <i class="fa-solid fa-earth-africa"></i> <span>Eng</span>
-              </p>
-
-              <p class="test" id="epear">
-                <i class="fa-regular fa-calendar"></i> <span>ই-পেপার</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
               </p>
               <p class="test">
                 <i class="fa-solid fa-user"></i> <span>Login</span>
               </p>
-              <p id="bar"><i class="fa-solid fa-bars"></i></p>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
 
-    <!-- post sections  -->
-    <section class="posts">
-      <div class="left">
-        <div class="leftNews"></div>
+          <nav class="navbar" id="navbar">
+            <div class="navbox">
+              <ul class="nav">
+                <li><a href="category.html?cat=সর্বশেষ">সর্বশেষ</a></li>
+                <li><a href="category.html?cat=বাংলাদেশ">বাংলাদেশ</a></li>
+                <li><a href="category.html?cat=রাজনীতি">রাজনীতি</a></li>
+                <li><a href="category.html?cat=বিশ্ব">বিশ্ব</a></li>
+                <li><a href="category.html?cat=বাণিজ্য">বাণিজ্য</a></li>
+                <li><a href="category.html?cat=মতামত">মতামত</a></li>
+                <li><a href="category.html?cat=খেলা">খেলা</a></li>
+                <li><a href="category.html?cat=বিনোদন">বিনোদন</a></li>
+                <li><a href="category.html?cat=চাকরি">চাকরি</a></li>
+                <li><a href="category.html?cat=জীবনযাপন">জীবনযাপন</a></li>
+                <li><a href="category.html?cat=ভিডিও">ভিডিও</a></li>
+              </ul>
 
-        <h1 class="subTitle">বিনোদন</h1>
-        <div class="leftSiteNoImage"></div>
-      </div>
-      <div class="center">
-        <div class="featurd"></div>
-        <div class="featurd2"></div>
-        <h1 class="subTitle">প্রযুক্তি</h1>
-        <div class="featurd3"></div>
-      </div>
-      <div class="right">
-        <div class="right1"></div>
-        <div class="right2"></div>
-      </div>
-    </section>
+              <div class="nav-icons">
+                <p class="test">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span>খুঁজুন</span>
+                </p>
+                <p class="">
+                  <i class="fa-solid fa-earth-africa"></i> <span>Eng</span>
+                </p>
 
-    <section class="jibonjapon global-container">
-      <h1 class="subTitle">জীবনযাপন ></h1>
-      <div class="jbn-news"></div>
-    </section>
-
-    <section class="opinions global-container">
-      <h1 class="subTitle">মতামত ></h1>
-      <div class="opinions-news">
-        <div class="opinionLeft">
-          <div class="opinionsLeftBox">
-            <div class="opinion-titles">
-              <div>
-                <span class="oplabel">মতামত.</span><span>একটা মাস বদলে</span>
-              </div>
-              <div>
-                <span>দিয়েছে ভবিষ্যতের অনেক</span>
-              </div>
-              <div>
-                <span>সমীকরণ</span>
+                <p class="test" id="epear">
+                  <i class="fa-regular fa-calendar"></i> <span>ই-পেপার</span>
+                </p>
+                <p class="test">
+                  <i class="fa-solid fa-user"></i> <span>Login</span>
+                </p>
+                <p id="bar"><i class="fa-solid fa-bars"></i></p>
               </div>
             </div>
-            <div>
-              <p class="left-des">
-                ডিসেম্বর মাসটি দেশের রাজনৈতিক ইতিহাসে নানা কারণেই স্মরণীয় হয়ে
-                থাকবে। বছরের শেষ এই মাসটি যেন নতুন বছরে রাজনীতির মোড় ঘুরিয়ে
-                দেওয়ার সূচনাবিন্দু হয়ে উঠেছে।
-              </p>
+          </nav>
+        </div>
+      </header>
+
+      <!-- post sections  -->
+      <section class="posts">
+        <div class="left">
+          <div class="leftNews"></div>
+
+          <h1 class="subTitle">বিনোদন</h1>
+          <div class="leftSiteNoImage"></div>
+        </div>
+        <div class="center">
+          <div class="featurd"></div>
+          <div class="featurd2"></div>
+          <h1 id="projuktii" class="subTitle">প্রযুক্তি</h1>
+          <div class="featurd3"></div>
+        </div>
+        <div class="right">
+          <div class="right1"></div>
+          <div class="right2"></div>
+        </div>
+      </section>
+
+      <section class="jibonjapon global-container">
+        <h1 class="subTitle">জীবনযাপন ></h1>
+        <div class="jbn-news"></div>
+      </section>
+
+      <section class="opinions global-container">
+        <h1 class="subTitle">মতামত ></h1>
+        <div class="opinions-news">
+          <div class="opinionLeft">
+            <div class="opinionsLeftBox">
+              <div class="opinion-titles">
+                <div>
+                  <span class="oplabel">মতামত.</span><span>একটা মাস বদলে</span>
+                </div>
+                <div>
+                  <span>দিয়েছে ভবিষ্যতের অনেক</span>
+                </div>
+                <div>
+                  <span>সমীকরণ</span>
+                </div>
+              </div>
+              <div>
+                <p class="left-des">
+                  ডিসেম্বর মাসটি দেশের রাজনৈতিক ইতিহাসে নানা কারণেই স্মরণীয় হয়ে
+                  থাকবে। বছরের শেষ এই মাসটি যেন নতুন বছরে রাজনীতির মোড় ঘুরিয়ে
+                  দেওয়ার সূচনাবিন্দু হয়ে উঠেছে।
+                </p>
+              </div>
+              <div class="opwriter">
+                <p><span>লেখা:</span> মোসলেহউদ্দিন আহমেদ</p>
+              </div>
             </div>
-            <div class="opwriter">
-              <p><span>লেখা:</span> মোসলেহউদ্দিন আহমেদ</p>
+          </div>
+          <div class="opinionRight">
+            <div class="ourOpinion"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="world global-container">
+        <!-- <div class="worldNews"></div> -->
+
+        <div class="world-contaner">
+          <div class="worldLeft"></div>
+          <div class="worldRight">sdf</div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-container">
+          <!-- Left: Logo -->
+          <div class="footer-left">
+            <a href="/">
+              <img
+                src="/assets/siteLogo/logo1.png"
+                alt="নতুন আলো"
+                class="footer-logo"
+              />
+            </a>
+            <p>
+              স্বাধীন ও নিরপেক্ষ সংবাদে প্রতিশ্রুতিবদ্ধ <br />
+              <strong>নতুন আলো</strong>
+            </p>
+          </div>
+
+          <!-- Middle: Links -->
+          <div class="footer-middle">
+            <h4>গুরুত্বপূর্ণ লিংক</h4>
+            <ul>
+              <li><a href="#">আমাদের সম্পর্কে</a></li>
+              <li><a href="#">যোগাযোগ</a></li>
+              <li><a href="#">গোপনীয়তা নীতি</a></li>
+              <li><a href="#">শর্তাবলি</a></li>
+            </ul>
+          </div>
+
+          <!-- Right: Social -->
+          <div class="footer-right">
+            <h4>আমাদের সাথে থাকুন</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
-        <div class="opinionRight">
-          <div class="ourOpinion"></div>
-        </div>
-      </div>
-    </section>
 
-    <section class="world global-container">
-      <!-- <div class="worldNews"></div> -->
-
-      <div class="world-contaner">
-        <div class="worldLeft"></div>
-        <div class="worldRight">sdf</div>
-      </div>
-    </section>
+        <!-- Bottom -->
+        <div class="footer-bottom">© ২০২৬ নতুন আলো | সর্বস্বত্ব সংরক্ষিত</div>
+      </footer>
+    </div>
 
     <script src="data/data.js"></script>
     <script src="js/script.js"></script>

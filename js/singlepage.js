@@ -45,7 +45,7 @@ function renderPostDetails() {
 
       </div>
       <img src="${postDetails.thumbnail}" alt="Thumbnail">
-      <p>${postDetails.content}</p>
+      <p class="details-content">${postDetails.content}</p>
     </div>
   `;
 

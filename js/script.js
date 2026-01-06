@@ -57,9 +57,14 @@ function renderNewsByCategory(
           <h1 class="global-title">${news.title}</h1>
           </a>
         
-          <a href="details.html?id=${news.id}">
+         
+
+           
+       <a href="details.html?id=${news.id}">
            <img src="${news.thumbnail}" alt="Thumbnail">
           </a>
+     
+
        </div>
        <p class="global-content">${news.excerpt}</p>
        <p class="pDate">${news.publishDate}</p>
@@ -134,15 +139,18 @@ newsfinding(
   (news) => {
     return `
     <article class="featured-news global-card">
-      <a href="details.html?id=${news.id}">
+     
+      <div class="banner-zoom">
+       <a  href="details.html?id=${news.id}">
        <img src="${news.thumbnail}" alt="news">
       </a>
+      </div>
       
         <a href="details.html?id=${news.id}">
          <h1 class="global-title">${news.title}</h1>
         </a>
-       <p>${news.excerpt}</p>
-       <button>বিস্তারিত পড়ুন</button>
+       <p class="global-content">${news.excerpt}</p>
+      
     </article>
   `;
   }
@@ -206,7 +214,7 @@ newsfinding(
 //jibonjapon section
 newsfinding(
   newsData,
-  { category: "lifestyle", selector: ".jbn-news", limit: 4 },
+  { category: "জীবনযাপন", selector: ".jbn-news", limit: 4 },
   (news) => {
     return `
     <article class="center3col global-card">
@@ -263,3 +271,27 @@ newsfinding(
 );
 
 // =====================singlepage ==============================
+
+document.addEventListener("DOMContentLoaded", () => {
+  const getbar = document.querySelector("#bar");
+  const catchSidebar = document.querySelector(".sidebar");
+  const closeBar = document.querySelector(".close-btn");
+
+  getbar.addEventListener("click", () => {
+    catchSidebar.classList.toggle("active");
+
+    // Scroll lock logic
+    if (catchSidebar.classList.contains("active")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  });
+
+  console.log(closeBar);
+
+  closeBar.addEventListener("click", () => {
+    catchSidebar.classList.remove("active");
+    document.body.style.overflow = "auto";
+  });
+});

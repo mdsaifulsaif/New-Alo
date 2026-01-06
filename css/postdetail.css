@@ -66,6 +66,10 @@
 .postDetailsBox img {
   width: 100%;
 }
+.postDetailsBox .details-content {
+  font-size: small;
+  line-height: 30px;
+}
 .postDetailsBox .social-links {
   display: flex;
   align-items: center;

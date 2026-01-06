@@ -11,11 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./postdetail.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/postdetail.css" />
   </head>
   <body>
-    <!-- header section  -->
     <header>
       <div class="">
         <div id="topBar" class="top-bar logo-container">
@@ -52,9 +51,11 @@
               <li><a href="category.html?cat=জীবনযাপন">জীবনযাপন</a></li>
               <li><a href="category.html?cat=ভিডিও">ভিডিও</a></li>
             </ul>
+
             <div class="nav-icons">
               <p class="test">
-                <i class="fa-solid fa-magnifying-glass"></i> <span>খুঁজুন</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>খুঁজুন</span>
               </p>
               <p class="">
                 <i class="fa-solid fa-earth-africa"></i> <span>Eng</span>
@@ -73,10 +74,126 @@
       </div>
     </header>
 
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar-header">
+          <img
+            src="./assets/siteLogo/logo1.png"
+            alt="নতুন আলো"
+            class="sidebar-logo"
+          />
+          <span class="close-btn">&times;</span>
+        </div>
+
+        <div class="siber-row">
+          <!-- left site -->
+          <div class="sider-left">
+            <a href="category.html?cat=বাংলাদেশ" class="menu-block">
+              <h4>বাংলাদেশ <i class="fa-solid fa-angle-right"></i></h4>
+              <p>রাজনীতি · জেলা · অপরাধ · পরিবেশ</p>
+            </a>
+
+            <a href="category.html?cat=বিশ্ব" class="menu-block">
+              <h4>বিশ্ব <i class="fa-solid fa-angle-right"></i></h4>
+              <p>ভারত · পাকিস্তান · যুক্তরাষ্ট্র · ইউরোপ</p>
+            </a>
+
+            <a href="category.html?cat=বাণিজ্য" class="menu-block">
+              <h4>বাণিজ্য <i class="fa-solid fa-angle-right"></i></h4>
+              <p>শেয়ারবাজার · ব্যাংক · অর্থনীতি</p>
+            </a>
+
+            <a href="category.html?cat=বিনোদন" class="menu-block">
+              <h4>বিনোদন <i class="fa-solid fa-angle-right"></i></h4>
+              <p>টিভি · নাটক · গান · সিনেমা</p>
+            </a>
+
+            <a href="category.html?cat=খেলা" class="menu-block">
+              <h4>খেলা <i class="fa-solid fa-angle-right"></i></h4>
+              <p>ক্রিকেট · ফুটবল · টেনিস</p>
+            </a>
+          </div>
+
+          <!-- right site -->
+          <div class="sider-right">
+            <div class="right-box">
+              <button class="login-btn">
+                <i class="fa-regular fa-user"></i> Login
+              </button>
+              <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i> খুঁজুন
+              </button>
+            </div>
+
+            <div class="right-box">
+              <h5>অনুসরণ করুন</h5>
+              <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+
+            <div class="right-box">
+              <h5>মোবাইল অ্যাপ</h5>
+              <button class="store-btn">Google Play</button>
+              <button class="store-btn">App Store</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="detail-container">
       <div class="details"></div>
       <div class="suggests"></div>
     </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- left logo -->
+        <div class="footer-left">
+          <a href="/">
+            <img
+              src="/assets/siteLogo/logo1.png"
+              alt="নতুন আলো"
+              class="footer-logo"
+            />
+          </a>
+          <p>
+            স্বাধীন ও নিরপেক্ষ সংবাদে প্রতিশ্রুতিবদ্ধ <br />
+            <strong>নতুন আলো</strong>
+          </p>
+        </div>
+
+        <!-- center link -->
+        <div class="footer-middle">
+          <h4>গুরুত্বপূর্ণ লিংক</h4>
+          <ul>
+            <li><a href="#">আমাদের সম্পর্কে</a></li>
+            <li><a href="#">যোগাযোগ</a></li>
+            <li><a href="#">গোপনীয়তা নীতি</a></li>
+            <li><a href="#">শর্তাবলি</a></li>
+          </ul>
+        </div>
+
+        <!-- right socials -->
+        <div class="footer-right">
+          <h4>আমাদের সাথে থাকুন</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div class="footer-bottom">© ২০২৬ নতুন আলো | সর্বস্বত্ব সংরক্ষিত</div>
+    </footer>
 
     <script src="data/data.js"></script>
     <script src="js/script.js"></script>
