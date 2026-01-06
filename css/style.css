@@ -735,6 +735,13 @@ nav .nav-icons {
 /* =========================
    RESPONSIVE BREAKPOINTS
 ========================= */
+@media screen and (min-width: 1024px) and (max-width: 1380px) {
+  /* laptop range styles */
+
+  .sidebar {
+    padding: 0 20px;
+  }
+}
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -775,6 +782,9 @@ nav .nav-icons {
   }
   .intNewsCard div div img {
     width: 100%;
+  }
+  .sidebar {
+    padding: 0 20px;
   }
   .intNewsCard div {
     display: flex;
