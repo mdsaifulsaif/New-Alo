@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/siteLogo/favicon.png" type="image/x-icon" />
-    <title>New Alo</title>
+    <title>Category</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,13 +12,19 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/category.css" />
   </head>
   <body>
-    <!-- header section  -->
     <header>
       <div class="">
         <div id="topBar" class="top-bar logo-container">
-          <img class="site-logo" src="./assets/siteLogo/logo1.png" alt="logo" />
+          <a href="/">
+            <img
+              class="site-logo"
+              src="./assets/siteLogo/logo1.png"
+              alt="logo"
+            />
+          </a>
 
           <div class="topbar-icons">
             <p class="test">
@@ -68,75 +73,21 @@
       </div>
     </header>
 
-    <!-- post sections  -->
-    <section class="posts">
-      <div class="left">
-        <div class="leftNews"></div>
+    <section class="detail-container">
+      <!-- category title  -->
+      <h1 class="categoryTitle"></h1>
 
-        <h1 class="subTitle">বিনোদন</h1>
-        <div class="leftSiteNoImage"></div>
+      <!-- 1st row  -->
+      <div class="c1strow">
+        <div class="c1strow-left"></div>
+        <div class="c1strow-right"></div>
       </div>
-      <div class="center">
-        <div class="featurd"></div>
-        <div class="featurd2"></div>
-        <h1 class="subTitle">প্রযুক্তি</h1>
-        <div class="featurd3"></div>
-      </div>
-      <div class="right">
-        <div class="right1"></div>
-        <div class="right2"></div>
-      </div>
+      <!-- 2nd row  -->
+      <div class="c2strow"></div>
     </section>
 
-    <section class="jibonjapon global-container">
-      <h1 class="subTitle">জীবনযাপন ></h1>
-      <div class="jbn-news"></div>
-    </section>
-
-    <section class="opinions global-container">
-      <h1 class="subTitle">মতামত ></h1>
-      <div class="opinions-news">
-        <div class="opinionLeft">
-          <div class="opinionsLeftBox">
-            <div class="opinion-titles">
-              <div>
-                <span class="oplabel">মতামত.</span><span>একটা মাস বদলে</span>
-              </div>
-              <div>
-                <span>দিয়েছে ভবিষ্যতের অনেক</span>
-              </div>
-              <div>
-                <span>সমীকরণ</span>
-              </div>
-            </div>
-            <div>
-              <p class="left-des">
-                ডিসেম্বর মাসটি দেশের রাজনৈতিক ইতিহাসে নানা কারণেই স্মরণীয় হয়ে
-                থাকবে। বছরের শেষ এই মাসটি যেন নতুন বছরে রাজনীতির মোড় ঘুরিয়ে
-                দেওয়ার সূচনাবিন্দু হয়ে উঠেছে।
-              </p>
-            </div>
-            <div class="opwriter">
-              <p><span>লেখা:</span> মোসলেহউদ্দিন আহমেদ</p>
-            </div>
-          </div>
-        </div>
-        <div class="opinionRight">
-          <div class="ourOpinion"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="world global-container">
-      <!-- <div class="worldNews"></div> -->
-
-      <div class="world-contaner">
-        <div class="worldLeft"></div>
-        <div class="worldRight">sdf</div>
-      </div>
-    </section>
-
-    <script src="data/data.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./data/data.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/category.js"></script>
   </body>
 </html>
