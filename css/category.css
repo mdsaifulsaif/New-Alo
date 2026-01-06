@@ -92,7 +92,7 @@
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 668px) {
   .c1strow {
     grid-template-columns: repeat(1, 1fr);
   }

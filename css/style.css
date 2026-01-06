@@ -737,7 +737,7 @@ nav .nav-icons {
 ========================= */
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   body {
     font-size: 15px;
   }
@@ -773,6 +773,9 @@ nav .nav-icons {
   .featurd3 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .intNewsCard div div img {
+    width: 100%;
+  }
   .intNewsCard div {
     display: flex;
     flex-direction: column;
@@ -783,7 +786,7 @@ nav .nav-icons {
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 668px) {
   body {
     font-size: 14px;
   }
