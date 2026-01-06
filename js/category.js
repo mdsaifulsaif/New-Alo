@@ -31,7 +31,7 @@ function renderNewsByCategory(
           </a>
         
           <a href="details.html?id=${news.id}">
-           <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
+           <img src="${news.thumbnail}" alt="Thumbnail">
           </a>
         
        </div>
@@ -64,7 +64,7 @@ function renderNewsByCategory2(
        <div>
 
         <a href="details.html?id=${news.id}">
-           <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
+           <img src="${news.thumbnail}" alt="Thumbnail">
           </a>
          
           <a href="details.html?id=${news.id}">
@@ -85,8 +85,7 @@ renderNewsByCategory(newsData, cat, ".c1strow-left", "cleftCard", 1);
 renderNewsByCategory2(newsData, cat, ".c1strow-right", "crightCard", 2);
 
 function filterdatabyCategory() {
-  const filteredData = newsData.filter((news) => news.category == cat);
-
+  const filteredData = newsData.filter((news) => news.category == cat).slice(2);
   const getContainer = document.querySelector(".c2strow");
 
   filteredData.forEach((news) => {
@@ -96,7 +95,7 @@ function filterdatabyCategory() {
     <div class="global-card ccard">
       <div>
           <a href="details.html?id=${news.id}">
-           <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
+           <img src="${news.thumbnail}" alt="Thumbnail">
           </a>
        </div>
         <div>

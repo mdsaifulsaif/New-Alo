@@ -58,7 +58,7 @@ function renderNewsByCategory(
           </a>
         
           <a href="details.html?id=${news.id}">
-           <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
+           <img src="${news.thumbnail}" alt="Thumbnail">
           </a>
        </div>
        <p class="global-content">${news.excerpt}</p>
@@ -135,7 +135,7 @@ newsfinding(
     return `
     <article class="featured-news global-card">
       <a href="details.html?id=${news.id}">
-       <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
+       <img src="${news.thumbnail}" alt="news">
       </a>
       
         <a href="details.html?id=${news.id}">
@@ -174,7 +174,7 @@ newsfinding(
     return `
     <article class="center3col global-card">
         <a href="details.html?id=${news.id}">
-       <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
+       <img src="${news.thumbnail}" alt="news">
       </a>
       <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>
@@ -211,7 +211,7 @@ newsfinding(
     return `
     <article class="center3col global-card">
     <a href="details.html?id=${news.id}">
-       <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
+       <img src="${news.thumbnail}" alt="news">
       </a>
       <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>
@@ -231,7 +231,7 @@ newsfinding(
     return `
     <article class=" worldCard global-card">
          <a href="details.html?id=${news.id}">
-       <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="news">
+       <img src="${news.thumbnail}" alt="news">
       </a>
       <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>
@@ -250,7 +250,7 @@ newsfinding(
     return `
     <article class=" worldCard global-card">
         <a href="details.html?id=${news.id}">
-       <img src="https://i.ibb.co/d30C0jr/img.jpg" alt="news">
+       <img src="${news.thumbnail}" alt="news">
       </a>
       <a href="details.html?id=${news.id}">
        <h1 class="global-title">${news.title}</h1>

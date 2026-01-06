@@ -44,7 +44,7 @@ function renderPostDetails() {
 </div>
 
       </div>
-      <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
+      <img src="${postDetails.thumbnail}" alt="Thumbnail">
       <p>${postDetails.content}</p>
     </div>
   `;
@@ -69,7 +69,7 @@ function renderPostDetails() {
         <h1 class="global-title">${news.title}</h1>
        </a>
         <a href="details.html?id=${news.id}">
-         <img src="https://i.ibb.co.com/d30C0jr/img.jpg" alt="Thumbnail">
+         <img src="${news.thumbnail}" alt="Thumbnail">
         </a>
         
        </div>
