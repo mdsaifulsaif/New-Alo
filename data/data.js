@@ -317,7 +317,7 @@ const newsData = [
     publishDateTime: "2026-01-02T21:50",
     author: "আন্তর্জাতিক ডেস্ক",
     thumbnail:
-      "https://images.unsplash.com/photo-1531206715517-5ca5c7f5023a?q=80&w=400&h=250&fit=crop",
+      "https://images.unsplash.com/photo-1558603668-6570496b66f8?q=80&w=400&h=250&fit=crop",
     excerpt:
       "গাজায় চলমান মানবিক সংকট নিরসনে জাতিসংঘে নতুন একটি প্রস্তাব উত্থাপন করা হয়েছে।",
     content:
@@ -509,7 +509,7 @@ const newsData = [
     publishDate: "৫ জানুয়ারি ২০২৬",
     author: "অনলাইন ডেস্ক",
     thumbnail:
-      "https://images.unsplash.com/photo-1610373211564-922649318b2c?q=80&w=400&h=250&fit=crop",
+      "https://images.unsplash.com/photo-1558603668-6570496b66f8?q=80&w=400&h=250&fit=crop",
     excerpt:
       "ভূ-রাজনৈতিক অস্থিরতার জেরে বিশ্ববাজারে অপরিশোধিত জ্বালানি তেলের দাম ৫ শতাংশ বেড়েছে।",
     content:
@@ -898,7 +898,7 @@ const newsData = [
     author: "অর্থনীতি ডেস্ক",
     authorImage: "https://i.pravatar.cc/150?u=401",
     thumbnail:
-      "https://images.unsplash.com/photo-1584263343327-cc4628614c4c?q=80&w=400&h=250&fit=crop",
+      "https://images.unsplash.com/photo-1558603668-6570496b66f8?q=80&w=400&h=250&fit=crop",
     excerpt:
       "আন্তর্জাতিক বাজারে দাম বাড়ার অজুহাতে স্থানীয় বাজারেও বাড়ছে স্বর্ণের দাম।",
     content:
